@@ -125,7 +125,7 @@ def joint_distribution(trip_subset,min_dist,sample,obj1,obj2):
     
     shared_rides = []
     
-    times = [ efficiency(trip_subset, 120,0.25)[2], efficiency(trip_subset,120,0.25)[3] ]
+    times = [ velocity(trip_subset, 120,0.25)[2], velocity(trip_subset,120,0.25)[3] ]
     time_sorted = [ entry for entry in range(len(times[0])) if times[0][entry] in obj1 and times[1][entry] in obj2 ]
     
     if time_sorted > sample: time_sorted = time_sorted[:sample]
