@@ -44,7 +44,7 @@ def region_to_region_data(dataframe,nyc_shapefile,region1,region2):
     return dataframe.drop(dataframe[~dataframe_filter].index)
 
 
-def efficiency(trip_subset,min_triptime,min_tripdistance):
+def velocity(trip_subset,min_triptime,min_tripdistance):
     
     import numpy as np
     import datetime
